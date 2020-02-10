@@ -11,6 +11,12 @@ import Foundation
 class Student: Person
 {
     lazy var marks = [String: Double]() // DICTIONARY ///////////////
+    
+   init(id: Int, name: String, gender: Gender, marks: [String:Double]) {
+        super.init(id: id, name: name, gender: gender)
+        self.marks = marks
+    
+    }
     var total: Double
     {
         return self.calculateTotal()
@@ -23,6 +29,11 @@ class Student: Person
     var result: String
     {
         return "PASS"
+    }
+    
+    
+    func setMarks(code: String, mark: Double) {
+        self.marks.updateValue(mark, forKey: code)
     }
     
     private func calculateTotal() -> Double
