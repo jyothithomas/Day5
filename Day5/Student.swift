@@ -17,6 +17,15 @@ class Student: Person
         self.marks = marks
     
     }
+    subscript(code: String) -> Double
+    {
+        get{
+            self.marks[code] ?? 0.0
+        }
+        set(newValue){
+            self.marks.updateValue(newValue, forKey: code)
+        }
+    }
     var total: Double
     {
         return self.calculateTotal()
