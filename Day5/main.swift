@@ -8,5 +8,8 @@
 
 import Foundation
 
-print("Hello, World!")
+var p1 = Person(id: 1,name: "Jyothi",gender: .FEMALE ,birthDate: Date())
+
+
+
 
