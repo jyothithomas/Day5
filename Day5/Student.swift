@@ -26,6 +26,20 @@ class Student: Person
             self.marks.updateValue(newValue, forKey: code)
         }
     }
+    subscript(code: Int) -> Any
+    {
+        get{
+            if code == 0
+            {
+                return self.id = id
+            }
+            else if code == 1
+            {
+                return self.name
+            }
+            return self.gender
+        }
+    }
     var total: Double
     {
         return self.calculateTotal()
