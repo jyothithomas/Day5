@@ -15,6 +15,7 @@ var s1 = Student(id: 1, name: "Jyothi", gender: .FEMALE, marks: ["MAD01": 50.0, 
 s1.setMarks(code: "MAD03", mark: 80.4)
 print(s1["MAD01"]) // DOES EXIST
 print(s1["MAD04"]) // DOESNOT EXIST
+print(s1[2])
 
 
 

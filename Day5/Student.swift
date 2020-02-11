@@ -73,4 +73,8 @@ class Student: Person
     {
         return self.total/Double(self.marks.count)
     }
+    override func display() {
+        
+    }
+    
 }
