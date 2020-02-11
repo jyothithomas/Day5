@@ -40,12 +40,13 @@ class Person: DisplayDelegate
         
     }
     func display() {
-        print("ID: \(self.id)")
-         print("Name: \(self.name)")
-         print("Gender: \(self.gender)")
+        print("ID:          :\(self.id)")
+         print("Name:        :\(self.name)")
+         print("Gender:      :\(self.gender)")
         if let d = self.birthDate
         {
-         print("BirthDate: \(d)")
+         print("BirthDate:    : \(d)")
+            print("Age:\(self.age)")
         } else {
             print("-- No Birthdate Found")
         }
